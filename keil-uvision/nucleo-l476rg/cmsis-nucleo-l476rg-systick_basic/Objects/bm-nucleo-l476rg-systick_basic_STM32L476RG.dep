@@ -1,26 +1,0 @@
-Dependencies for Project 'bm-nucleo-l476rg-systick_basic', Target 'STM32L476RG': (DO NOT MODIFY !)
-F (.\main.c)(0x5FB8439B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_STM32L476RG-ID:/ProgramsFiles/keil5/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/ProgramsFiles/keil5/Keil/STM32L4xx_DFP/2.3.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32L476xx-o ./objects/main.o -MD)
-I (D:\ProgramsFiles\keil5\Keil\STM32L4xx_DFP\2.3.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include\stm32l4xx.h)(0x5DEEC2D4)
-I (D:\ProgramsFiles\keil5\Keil\STM32L4xx_DFP\2.3.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include\stm32l476xx.h)(0x5DEEC2D4)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\ARM\ARMCLANG\include\stdint.h)(0x5ED6C2B4)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E83BD92)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0D79BC)
-I (D:\ProgramsFiles\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0D79E8)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\Keil\STM32L4xx_DFP\2.3.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include\system_stm32l4xx.h)(0x5DEEC2D4)
-F (RTE\Device\STM32L476RGTx\startup_stm32l476xx.s)(0x5DEEC2D4)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g-I.\RTE\_STM32L476RG-ID:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\ProgramsFiles\keil5\Keil\STM32L4xx_DFP\2.3.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include--pd "__UVISION_VERSION SETA 525"--pd "_RTE_ SETA 1"--pd "STM32L476xx SETA 1"--list .\listings\startup_stm32l476xx.lst--xref -o .\objects\startup_stm32l476xx.o--depend .\objects\startup_stm32l476xx.d)
-F (RTE\Device\STM32L476RGTx\system_stm32l4xx.c)(0x5DEEC2D4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_STM32L476RG-ID:/ProgramsFiles/keil5/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/ProgramsFiles/keil5/Keil/STM32L4xx_DFP/2.3.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32L476xx-o ./objects/system_stm32l4xx.o -MD)
-I (D:\ProgramsFiles\keil5\Keil\STM32L4xx_DFP\2.3.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include\stm32l4xx.h)(0x5DEEC2D4)
-I (D:\ProgramsFiles\keil5\Keil\STM32L4xx_DFP\2.3.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include\stm32l476xx.h)(0x5DEEC2D4)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\ARM\ARMCLANG\include\stdint.h)(0x5ED6C2B4)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E83BD92)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0D79BC)
-I (D:\ProgramsFiles\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0D79E8)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\Keil\STM32L4xx_DFP\2.3.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include\system_stm32l4xx.h)(0x5DEEC2D4)

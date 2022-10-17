@@ -1,29 +1,0 @@
-Dependencies for Project 'bm-nucleo-f746zg-ra8835', Target 'stm32f746zg': (DO NOT MODIFY !)
-CompilerVersion: 6140000::V6.14::ARMCLANG
-F (.\main.c)(0x5F5280D7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_stm32f746zg-ID:/ProgramsFiles/keil5/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/ProgramsFiles/keil5/Keil/STM32F7xx_DFP/2.13.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F746xx -D_RTE_-o ./objects/main.o -MD)
-I (D:\ProgramsFiles\keil5\Keil\STM32F7xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h)(0x5F19E21C)
-I (D:\ProgramsFiles\keil5\Keil\STM32F7xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f746xx.h)(0x5F19E21C)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm7.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\ARM\ARMCLANG\include\stdint.h)(0x5ED6C2B4)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E83BD92)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0D79BC)
-I (D:\ProgramsFiles\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0D79E8)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cachel1_armv7.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\Keil\STM32F7xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\system_stm32f7xx.h)(0x5F19E21C)
-F (RTE\Device\STM32F746ZGTx\startup_stm32f746xx.s)(0x5F19E21C)(--target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -masm=auto -c-gdwarf-3 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_stm32f746zg-ID:/ProgramsFiles/keil5/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/ProgramsFiles/keil5/Keil/STM32F7xx_DFP/2.13.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 531" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32F746xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32f746xx.o)
-F (RTE\Device\STM32F746ZGTx\system_stm32f7xx.c)(0x5F19E21C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_stm32f746zg-ID:/ProgramsFiles/keil5/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/ProgramsFiles/keil5/Keil/STM32F7xx_DFP/2.13.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F746xx -D_RTE_-o ./objects/system_stm32f7xx.o -MD)
-I (D:\ProgramsFiles\keil5\Keil\STM32F7xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h)(0x5F19E21C)
-I (D:\ProgramsFiles\keil5\Keil\STM32F7xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f746xx.h)(0x5F19E21C)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm7.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\ARM\ARMCLANG\include\stdint.h)(0x5ED6C2B4)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E83BD92)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0D79BC)
-I (D:\ProgramsFiles\keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0D79E8)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cachel1_armv7.h)(0x5E8F87F2)
-I (D:\ProgramsFiles\keil5\Keil\STM32F7xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\system_stm32f7xx.h)(0x5F19E21C)
