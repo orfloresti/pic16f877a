@@ -1,12 +1,14 @@
 __S0 800 0 ABS 0
-__S1 0 0 ABS 0
+__S1 73 0 ABS 0
 __S3 0 0 ABS 0
 __Hintentry 0 0 CODE 0
 __Lintentry 0 0 CODE 0
-_main 7F9 0 CODE 0
+_main 7D4 0 CODE 0
 ___sp 0 0 STACK 2
 btemp 7E 0 ABS 0
 start 0 0 CODE 0
+_TRISA 85 0 ABS 0
+_PORTA 5 0 ABS 0
 reset_vec 0 0 CODE 0
 wtemp0 7E 0 ABS 0
 __Hconfig 2008 0 CONFIG 4
@@ -62,7 +64,7 @@ __Hstack 0 0 STACK 2
 __Lstack 0 0 STACK 2
 __Hspace_0 800 0 ABS 0
 __Lspace_0 0 0 ABS 0
-__Hspace_1 0 0 ABS 0
+__Hspace_1 73 0 ABS 0
 __Lspace_1 0 0 ABS 0
 __Hspace_2 0 0 ABS 0
 __Lspace_2 0 0 ABS 0
@@ -84,25 +86,29 @@ intlevel4 0 0 ENTRY 0
 intlevel5 0 0 ENTRY 0
 __HcstackCOMMON 0 0 ABS 0
 __LcstackCOMMON 0 0 ABS 0
-__pcstackCOMMON 0 0 COMMON 1
+__pcstackCOMMON 70 0 COMMON 1
 start_initialization 7FC 0 CODE 0
 __Hmaintext 0 0 ABS 0
 __Lmaintext 0 0 ABS 0
-__pmaintext 7F9 0 CODE 0
+__pmaintext 7D4 0 CODE 0
 __initialization 7FC 0 CODE 0
 %segments
 reset_vec 0 5 CODE 0 0
 cinit FF8 FFF CODE FF8 0
-maintext FF2 FF7 CODE FF2 0
+cstackCOMMON 70 72 COMMON 70 1
+maintext FA8 FF7 CODE FA8 0
 %locals
-dist/default/production\pic16f877a_bcd.X.production.o
-C:\Users\orlan\AppData\Local\Temp\xcAsfnc.s
-340 7FC 0 CODE 0
-343 7FC 0 CODE 0
-349 7FC 0 CODE 0
-351 7FC 0 CODE 0
-352 7FD 0 CODE 0
+dist/default/production\define.X.production.o
+C:\Users\orlan\AppData\Local\Temp\xcAsld8.s
+352 7FC 0 CODE 0
+355 7FC 0 CODE 0
+361 7FC 0 CODE 0
+363 7FC 0 CODE 0
+364 7FD 0 CODE 0
 main.c
-11 7F9 0 CODE 0
-12 7F9 0 CODE 0
-13 7F9 0 CODE 0
+27 7D4 0 CODE 0
+29 7D4 0 CODE 0
+32 7D7 0 CODE 0
+33 7DB 0 CODE 0
+34 7E8 0 CODE 0
+35 7EB 0 CODE 0

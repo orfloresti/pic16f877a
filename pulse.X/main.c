@@ -4,8 +4,10 @@
  *
  * Created on 11 de octubre de 2022, 18:18
  */
-
+#include <xc.h>
 #include "configs.h"
+
+#define _XTAL_FREQ 20000000
 
 void main(void) {
     TRISB0 = 0x0;
