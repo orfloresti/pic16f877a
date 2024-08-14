@@ -1,6 +1,6 @@
 /*
  * File:   main.c
- * Author: orlan
+ * Author: orfloresti
  *
  * Created on August 14, 2024, 12:22 AM
  */
@@ -19,39 +19,8 @@
 // Use project enums instead of #define for ON and OFF.
 
 #include <xc.h>
+#include "libs/uart/uart.h"
 #define _XTAL_FREQ 20000000
-
-void UART_init() {
-    TRISCbits.TRISC6 = 0; // TX output
-    TRISCbits.TRISC7 = 1; // RX input
-    TXSTAbits.SYNC = 0; // UART
-    TXSTAbits.TX9 = 0; // 8 bits
-    TXSTAbits.BRGH = 1; // High speed
-    SPBRG = 129; // Value from table in data-sheet (p. 114)
-    RCSTAbits.SPEN = 1; // UART on
-    TXSTAbits.TXEN = 1; // Enable TX on
-    RCSTAbits.CREN = 1; // Enable RX on
-}
-
-char UART_read() {
-    if(PIR1bits.RCIF == 1){
-        return RCREG;  
-    } else {
-        return 0;
-    }
-}
-
-void UART_write(char data) {
-    TXREG = data;
-    while (TXSTAbits.TRMT == 0);
-}
-
-void UART_printf(unsigned char* text) {
-    while (*text != 0x00) {
-        UART_write(*text);
-        text++;
-    }
-}
 
 void main(void) {
 
@@ -63,19 +32,20 @@ void main(void) {
     UART_init();
     unsigned char* text = "Hello world \n\r";
     UART_printf(text);
+    UART_printf("***************\n\r");
+    UART_printf("0 - Led Off \n\r");
+    UART_printf("1 - Led On \n\r");
+    UART_printf("***************\n\r");
     
-    UART_printf("1 - On \n\r");
-    UART_printf("0 - Off \n\r");
-
     while (1) {
         flag_rx = UART_read();
         if(flag_rx == '1') {
-            UART_printf("On \n\r");
+            UART_printf("LED On \n\r");
             PORTAbits.RA4 = 1;
         }
         
         if(flag_rx == '0') {
-            UART_printf("Off \n\r");
+            UART_printf("LED Off \n\r");
             PORTAbits.RA4 = 0;
         }
     }
