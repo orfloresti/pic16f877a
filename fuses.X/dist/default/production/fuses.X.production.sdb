@@ -11,14 +11,9 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"18 D:\Projects\microchip\pic16f877a\fundamentals\blink.X\main.c
+"24 D:\Projects\microchip\pic16f877a\fundamentals\fuses.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"166 D:/AppData/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
-[v _PORTA PORTA `VEuc  1 e 1 @5 ]
-"1325
-[v _TRISA TRISA `VEuc  1 e 1 @133 ]
-"18 D:\Projects\microchip\pic16f877a\fundamentals\blink.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"29
+"26
 } 0
