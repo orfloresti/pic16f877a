@@ -1,3 +1,16 @@
+/*
+ * File:   main.c
+ * Author: orfloresti
+ *
+ * Created on August 14, 2024, 12:22 AM
+ * 
+ * Using board JT40p-v1.0
+ * **Note**: 
+ * Blink using RA4, to use it as output requires a pull resistor
+ * 
+ *  Vcc --??-- RA4 -->|--GND
+ * 
+ */
 
 // PIC16F877A Configuration Bit Settings
 
@@ -17,12 +30,15 @@
 
 void main(void) {
     
-    TRISA = 0;
+    // TRISA = 0; // All port as output
+    TRISAbits.TRISA4 = 0;
     
     while(1) {
-        PORTA = 0xff;
+        // PORTA = 0xff; // All port high
+        PORTAbits.RA4 = 1;
         __delay_ms(1000);
-        PORTA = 0x00;
+        // PORTA = 0x00; // All port low
+        PORTAbits.RA4 = 1;
         __delay_ms(1000);
     }
     

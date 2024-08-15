@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\orlan\AppData\Local\Temp\xcAsjas.o
+$C:\Users\orlan\AppData\Local\Temp\xcAsfts.o
 reset_vec CODE 0 0 0 1 2 1
 end_init CODE 0 1 1 3 2 1
 config CONFIG 4 2007 2007 1 2 1
@@ -70,11 +70,11 @@ STRING 800-1EFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/debug\usart.X.debug.o
-7FC cinit CODE >611:C:\Users\orlan\AppData\Local\Temp\xcAsjas.s
-7FC cinit CODE >614:C:\Users\orlan\AppData\Local\Temp\xcAsjas.s
-7FC cinit CODE >620:C:\Users\orlan\AppData\Local\Temp\xcAsjas.s
-7FC cinit CODE >622:C:\Users\orlan\AppData\Local\Temp\xcAsjas.s
-7FD cinit CODE >623:C:\Users\orlan\AppData\Local\Temp\xcAsjas.s
+7FC cinit CODE >611:C:\Users\orlan\AppData\Local\Temp\xcAsfts.s
+7FC cinit CODE >614:C:\Users\orlan\AppData\Local\Temp\xcAsfts.s
+7FC cinit CODE >620:C:\Users\orlan\AppData\Local\Temp\xcAsfts.s
+7FC cinit CODE >622:C:\Users\orlan\AppData\Local\Temp\xcAsfts.s
+7FD cinit CODE >623:C:\Users\orlan\AppData\Local\Temp\xcAsfts.s
 773 text4 CODE >4:D:\Projects\microchip\pic16f877a\fundamentals\usart.X\libs/uart/uart.c
 773 text4 CODE >5:D:\Projects\microchip\pic16f877a\fundamentals\usart.X\libs/uart/uart.c
 776 text4 CODE >6:D:\Projects\microchip\pic16f877a\fundamentals\usart.X\libs/uart/uart.c
@@ -139,17 +139,17 @@ __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 400F 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\orlan\AppData\Local\Temp\xcAsjas.o
+___sp 0 0 STACK 2 stack C:\Users\orlan\AppData\Local\Temp\xcAsfts.o
 _main F4A 0 CODE 0 maintext dist/default/debug\usart.X.debug.o
 btemp 7E 0 ABS 0 - dist/default/debug\usart.X.debug.o
-start 2 0 CODE 0 init C:\Users\orlan\AppData\Local\Temp\xcAsjas.o
+start 2 0 CODE 0 init C:\Users\orlan\AppData\Local\Temp\xcAsfts.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\orlan\AppData\Local\Temp\xcAsjas.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\orlan\AppData\Local\Temp\xcAsjas.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\orlan\AppData\Local\Temp\xcAsjas.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\orlan\AppData\Local\Temp\xcAsjas.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\orlan\AppData\Local\Temp\xcAsjas.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\orlan\AppData\Local\Temp\xcAsjas.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\orlan\AppData\Local\Temp\xcAsfts.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\orlan\AppData\Local\Temp\xcAsfts.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\orlan\AppData\Local\Temp\xcAsfts.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\orlan\AppData\Local\Temp\xcAsfts.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\orlan\AppData\Local\Temp\xcAsfts.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\orlan\AppData\Local\Temp\xcAsfts.o
 wtemp0 7E 0 ABS 0 - dist/default/debug\usart.X.debug.o
 __Hfunctab 0 0 ENTRY 0 functab -
 _UART_write ECE 0 CODE 0 text3 dist/default/debug\usart.X.debug.o
@@ -157,14 +157,14 @@ __Hclrtext 0 0 ABS 0 clrtext -
 main@flag_rx 76 0 COMMON 1 cstackCOMMON dist/default/debug\usart.X.debug.o
 __Lmaintext 0 0 ABS 0 maintext -
 _UART_printf F0C 0 CODE 0 text2 dist/default/debug\usart.X.debug.o
-___stackhi 0 0 ABS 0 - C:\Users\orlan\AppData\Local\Temp\xcAsjas.o
-___stacklo 0 0 ABS 0 - C:\Users\orlan\AppData\Local\Temp\xcAsjas.o
+___stackhi 0 0 ABS 0 - C:\Users\orlan\AppData\Local\Temp\xcAsfts.o
+___stacklo 0 0 ABS 0 - C:\Users\orlan\AppData\Local\Temp\xcAsfts.o
 __end_of_UART_write EE6 0 CODE 0 text3 dist/default/debug\usart.X.debug.o
 UART_write@data 71 0 COMMON 1 cstackCOMMON dist/default/debug\usart.X.debug.o
 start_initialization FF8 0 CODE 0 cinit dist/default/debug\usart.X.debug.o
 _TRISAbits 85 0 ABS 0 - dist/default/debug\usart.X.debug.o
 _TRISCbits 87 0 ABS 0 - dist/default/debug\usart.X.debug.o
-___int_sp 0 0 STACK 2 stack C:\Users\orlan\AppData\Local\Temp\xcAsjas.o
+___int_sp 0 0 STACK 2 stack C:\Users\orlan\AppData\Local\Temp\xcAsfts.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -204,7 +204,7 @@ __S1 77 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __Lintentry 2 0 CODE 0 intentry -
 __stringtab 8 0 STRING 0 strings dist/default/debug\usart.X.debug.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\orlan\AppData\Local\Temp\xcAsjas.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\orlan\AppData\Local\Temp\xcAsfts.o
 _RCSTAbits 18 0 ABS 0 - dist/default/debug\usart.X.debug.o
 __pmaintext F4A 0 CODE 0 maintext dist/default/debug\usart.X.debug.o
 __Lcommon 0 0 ABS 0 common -
