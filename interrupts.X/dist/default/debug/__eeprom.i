@@ -1,48 +1,151 @@
-# 1 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\sources\\c90\\pic\\__eeprom.c"
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\sources\\c99\\pic\\__eeprom.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\language_support.h" 1 3
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\sources\\c90\\pic\\__eeprom.c" 2
-# 1 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\xc.h" 1 3
-# 18 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\xc.h" 3
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\sources\\c99\\pic\\__eeprom.c" 2
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 1 3
+# 18 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
 
 extern double __fpnormalize(double);
 
 
 
-# 1 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\xc8debug.h" 1 3
-# 13 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\xc8debug.h" 3
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\xc8debug.h" 1 3
+
+
+
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 1 3
+
+
+
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 5 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 2 3
+
+
+
+
+
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\features.h" 1 3
+# 11 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 2 3
+# 21 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 3
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 24 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long int wchar_t;
+# 128 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned size_t;
+# 174 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __int24 int24_t;
+# 210 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __uint24 uint24_t;
+# 22 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 2 3
+
+int atoi (const char *);
+long atol (const char *);
+
+
+
+double atof (const char *);
+
+
+float strtof (const char *restrict, char **restrict);
+double strtod (const char *restrict, char **restrict);
+long double strtold (const char *restrict, char **restrict);
+
+
+
+long strtol (const char *restrict, char **restrict, int);
+unsigned long strtoul (const char *restrict, char **restrict, int);
+
+
+
+
+
+unsigned long __strtoxl(const char * s, char ** endptr, int base, char is_signed);
+# 55 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 3
+int rand (void);
+void srand (unsigned);
+
+void *malloc (size_t);
+void *calloc (size_t, size_t);
+void *realloc (void *, size_t);
+void free (void *);
+
+          void abort (void);
+int atexit (void (*) (void));
+          void exit (int);
+          void _Exit (int);
+
+void *bsearch (const void *, const void *, size_t, size_t, int (*)(const void *, const void *));
+
+
+
+
+
+
+
+__attribute__((nonreentrant)) void qsort (void *, size_t, size_t, int (*)(const void *, const void *));
+
+int abs (int);
+long labs (long);
+
+
+
+
+typedef struct { int quot, rem; } div_t;
+typedef struct { long quot, rem; } ldiv_t;
+
+
+
+
+div_t div (int, int);
+ldiv_t ldiv (long, long);
+
+
+
+
+typedef struct { unsigned int quot, rem; } udiv_t;
+typedef struct { unsigned long quot, rem; } uldiv_t;
+udiv_t udiv (unsigned int, unsigned int);
+uldiv_t uldiv (unsigned long, unsigned long);
+# 5 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\xc8debug.h" 2 3
+
+
+
+
+
+
+
 #pragma intrinsic(__builtin_software_breakpoint)
 extern void __builtin_software_breakpoint(void);
-# 23 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\xc.h" 2 3
+# 23 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 2 3
 
-# 1 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\builtins.h" 1 3
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\builtins.h" 1 3
 
 
 
-# 1 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdint.h" 1 3
-# 13 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdint.h" 3
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 1 3
+# 26 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 3
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 133 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned short uintptr_t;
+# 148 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef short intptr_t;
+# 164 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef signed char int8_t;
 
 
 
 
-
-
-typedef signed int int16_t;
-
-
-
-
-
-
-
-typedef __int24 int24_t;
+typedef short int16_t;
+# 179 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long int32_t;
+# 192 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef int32_t intmax_t;
 
 
 
@@ -50,127 +153,65 @@ typedef __int24 int24_t;
 
 
 
-typedef signed long int int32_t;
-# 52 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdint.h" 3
 typedef unsigned char uint8_t;
 
 
 
 
-
-typedef unsigned int uint16_t;
-
-
-
-
-
-
-typedef __uint24 uint24_t;
-
-
-
-
-
-
-typedef unsigned long int uint32_t;
-# 88 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdint.h" 3
-typedef signed char int_least8_t;
-
-
-
-
-
-
-
-typedef signed int int_least16_t;
-# 109 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdint.h" 3
-typedef __int24 int_least24_t;
-# 118 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdint.h" 3
-typedef signed long int int_least32_t;
-# 136 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdint.h" 3
-typedef unsigned char uint_least8_t;
-
-
-
-
-
-
-typedef unsigned int uint_least16_t;
-# 154 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdint.h" 3
-typedef __uint24 uint_least24_t;
-
-
-
-
-
-
-
-typedef unsigned long int uint_least32_t;
-# 181 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdint.h" 3
-typedef signed char int_fast8_t;
-
-
-
-
-
-
-typedef signed int int_fast16_t;
-# 200 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdint.h" 3
-typedef __int24 int_fast24_t;
-
-
-
-
-
-
-
-typedef signed long int int_fast32_t;
-# 224 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdint.h" 3
-typedef unsigned char uint_fast8_t;
-
-
-
-
-
-typedef unsigned int uint_fast16_t;
-# 240 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdint.h" 3
-typedef __uint24 uint_fast24_t;
-
-
-
-
-
-
-typedef unsigned long int uint_fast32_t;
-# 268 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdint.h" 3
-typedef int32_t intmax_t;
-# 282 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdint.h" 3
+typedef unsigned short uint16_t;
+# 215 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long uint32_t;
+# 233 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef uint32_t uintmax_t;
+# 27 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 2 3
+
+typedef int8_t int_fast8_t;
 
 
 
 
+typedef int8_t int_least8_t;
+typedef int16_t int_least16_t;
+
+typedef int24_t int_least24_t;
+typedef int24_t int_fast24_t;
+
+typedef int32_t int_least32_t;
 
 
-typedef int16_t intptr_t;
+
+
+typedef uint8_t uint_fast8_t;
 
 
 
 
-typedef uint16_t uintptr_t;
-# 4 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\builtins.h" 2 3
+typedef uint8_t uint_least8_t;
+typedef uint16_t uint_least16_t;
+
+typedef uint24_t uint_least24_t;
+typedef uint24_t uint_fast24_t;
+
+typedef uint32_t uint_least32_t;
+# 148 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 3
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/stdint.h" 1 3
+typedef int16_t int_fast16_t;
+typedef int32_t int_fast32_t;
+typedef uint16_t uint_fast16_t;
+typedef uint32_t uint_fast32_t;
+# 149 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 2 3
+# 4 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\builtins.h" 2 3
 
 
 
 #pragma intrinsic(__nop)
 extern void __nop(void);
-
-
+# 19 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\builtins.h" 3
 #pragma intrinsic(_delay)
 extern __attribute__((nonreentrant)) void _delay(uint32_t);
 #pragma intrinsic(_delaywdt)
 extern __attribute__((nonreentrant)) void _delaywdt(uint32_t);
-# 24 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\xc.h" 2 3
+# 24 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 2 3
 
 
 
@@ -180,12 +221,12 @@ extern __attribute__((nonreentrant)) void _delaywdt(uint32_t);
 
 
 
-# 1 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\htc.h" 1 3
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\htc.h" 1 3
 
 
 
-# 1 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\xc.h" 1 3
-# 4 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\htc.h" 2 3
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 1 3
+# 4 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\htc.h" 2 3
 # 6 "D:/AppData/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\\pic\\include\\pic.h" 2 3
 
 
@@ -198,7 +239,7 @@ extern __attribute__((nonreentrant)) void _delaywdt(uint32_t);
 # 663 "D:/AppData/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\\pic\\include\\pic_chip_select.h" 3
 # 1 "D:/AppData/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\\pic\\include\\proc\\pic16f877a.h" 1 3
 # 44 "D:/AppData/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\\pic\\include\\proc\\pic16f877a.h" 3
-# 1 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\__at.h" 1 3
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\__at.h" 1 3
 # 45 "D:/AppData/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\\pic\\include\\proc\\pic16f877a.h" 2 3
 
 
@@ -1846,8 +1887,8 @@ __attribute__((__unsupported__("The " "FLASH_ERASE" " macro function is no longe
 
 
 
-# 1 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\eeprom_routines.h" 1 3
-# 114 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\eeprom_routines.h" 3
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\eeprom_routines.h" 1 3
+# 114 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\eeprom_routines.h" 3
 extern void eeprom_write(unsigned char addr, unsigned char value);
 extern unsigned char eeprom_read(unsigned char addr);
 # 84 "D:/AppData/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\\pic\\include\\pic.h" 2 3
@@ -1855,8 +1896,8 @@ extern unsigned char eeprom_read(unsigned char addr);
 extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
-# 28 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\include\\xc.h" 2 3
-# 1 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\sources\\c90\\pic\\__eeprom.c" 2
+# 28 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 2 3
+# 1 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\sources\\c99\\pic\\__eeprom.c" 2
 
 
 
@@ -1877,7 +1918,7 @@ __eecpymem(volatile unsigned char *to, __eeprom unsigned char * from, unsigned c
   *cp++ = EEDATA;
   ++EEADR;
  }
-# 36 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\sources\\c90\\pic\\__eeprom.c"
+# 36 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\sources\\c99\\pic\\__eeprom.c"
 }
 
 void
@@ -1910,7 +1951,7 @@ __memcpyee(__eeprom unsigned char * to, const unsigned char *from, unsigned char
    INTCONbits.GIE = 1;
   }
  }
-# 101 "D:\\AppData\\Microchip\\xc8\\v2.36\\pic\\sources\\c90\\pic\\__eeprom.c"
+# 101 "D:\\AppData\\Microchip\\xc8\\v2.46\\pic\\sources\\c99\\pic\\__eeprom.c"
 }
 
 unsigned char

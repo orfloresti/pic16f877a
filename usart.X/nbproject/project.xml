@@ -11,6 +11,7 @@
             <sourceRootList>
                 <sourceRootElem>drivers</sourceRootElem>
                 <sourceRootElem>libs/uart</sourceRootElem>
+                <sourceRootElem>../lib</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

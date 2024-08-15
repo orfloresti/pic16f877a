@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.36 build 20220127204148 
-                                                                                               Wed Aug 14 00:53:09 2024
+                                                                                               Thu Aug 15 17:00:22 2024
 
 Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1 
      1                           	processor	16F877A
@@ -569,7 +569,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    555  075D                     __ptext1:	
    556 ;; *************** function _UART_read *****************
    557 ;; Defined at:
-   558 ;;		line 16 in file "libs/uart/uart.c"
+   558 ;;		line 16 in file "../lib/uart/uart.c"
    559 ;; Parameters:    Size  Location     Type
    560 ;;		None
    561 ;; Auto vars:     Size  Location     Type
@@ -604,7 +604,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    590                           ; Regs used in _UART_read: [wreg]
    591                           
    592                           
-   593                           ;libs/uart/uart.c: 17:     if (PIR1bits.RCIF == 1) {
+   593                           ;../lib/uart/uart.c: 17:     if (PIR1bits.RCIF == 1) {
    594  075D  1283               	bcf	3,5	;RP0=0, select bank0
    595  075E  1303               	bcf	3,6	;RP1=0, select bank0
    596  075F  1E8C               	btfss	12,5	;volatile
@@ -615,12 +615,12 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    601  0763                     u30:
    602  0763                     l668:
    603                           
-   604                           ;libs/uart/uart.c: 18:         return RCREG;
+   604                           ;../lib/uart/uart.c: 18:         return RCREG;
    605  0763  081A               	movf	26,w	;volatile
    606  0764  2F66               	goto	l41
    607  0765                     l674:
    608                           
-   609                           ;libs/uart/uart.c: 20:         return 0;
+   609                           ;../lib/uart/uart.c: 20:         return 0;
    610  0765  3000               	movlw	0
    611  0766                     l41:
    612  0766  0008               	return
@@ -630,7 +630,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    616  0786                     __ptext2:	
    617 ;; *************** function _UART_printf *****************
    618 ;; Defined at:
-   619 ;;		line 29 in file "libs/uart/uart.c"
+   619 ;;		line 29 in file "../lib/uart/uart.c"
    620 ;; Parameters:    Size  Location     Type
    621 ;;  text            1    wreg     PTR unsigned char 
    622 ;;		 -> STR_7(11), STR_6(10), STR_5(18), STR_4(14), 
@@ -672,25 +672,25 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    658  0786  00F2               	movwf	UART_printf@text
    659  0787                     l708:
    660                           
-   661                           ;libs/uart/uart.c: 30:     while (*text != 0x00) {
+   661                           ;../lib/uart/uart.c: 30:     while (*text != 0x00) {
    662  0787  2F98               	goto	l714
    663  0788                     l710:
    664                           
-   665                           ;libs/uart/uart.c: 31:         UART_write(*text);
+   665                           ;../lib/uart/uart.c: 31:         UART_write(*text);
    666  0788  0872               	movf	UART_printf@text,w
    667  0789  0084               	movwf	4
    668  078A  120A  118A  2003  120A  118A  	fcall	stringdir
    669  078F  120A  118A  2767  120A  118A  	fcall	_UART_write
    670  0794                     l712:
    671                           
-   672                           ;libs/uart/uart.c: 32:         text++;
+   672                           ;../lib/uart/uart.c: 32:         text++;
    673  0794  3001               	movlw	1
    674  0795  00F1               	movwf	??_UART_printf
    675  0796  0871               	movf	??_UART_printf,w
    676  0797  07F2               	addwf	UART_printf@text,f
    677  0798                     l714:
    678                           
-   679                           ;libs/uart/uart.c: 30:     while (*text != 0x00) {
+   679                           ;../lib/uart/uart.c: 30:     while (*text != 0x00) {
    680  0798  0872               	movf	UART_printf@text,w
    681  0799  0084               	movwf	4
    682  079A  120A  118A  2003  120A  118A  	fcall	stringdir
@@ -709,7 +709,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    695  0767                     __ptext3:	
    696 ;; *************** function _UART_write *****************
    697 ;; Defined at:
-   698 ;;		line 24 in file "libs/uart/uart.c"
+   698 ;;		line 24 in file "../lib/uart/uart.c"
    699 ;; Parameters:    Size  Location     Type
    700 ;;  data            1    wreg     unsigned char 
    701 ;; Auto vars:     Size  Location     Type
@@ -746,13 +746,13 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    732  0767  00F0               	movwf	UART_write@data
    733  0768                     l646:
    734                           
-   735                           ;libs/uart/uart.c: 25:     TXREG = data;
+   735                           ;../lib/uart/uart.c: 25:     TXREG = data;
    736  0768  0870               	movf	UART_write@data,w
    737  0769  1283               	bcf	3,5	;RP0=0, select bank0
    738  076A  1303               	bcf	3,6	;RP1=0, select bank0
    739  076B  0099               	movwf	25	;volatile
    740  076C                     l45:	
-   741                           ;libs/uart/uart.c: 26:     while (TXSTAbits.TRMT == 0);
+   741                           ;../lib/uart/uart.c: 26:     while (TXSTAbits.TRMT == 0);
    742                           
    743  076C  1683               	bsf	3,5	;RP0=1, select bank1
    744  076D  1303               	bcf	3,6	;RP1=0, select bank1
@@ -770,7 +770,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    756  0773                     __ptext4:	
    757 ;; *************** function _UART_init *****************
    758 ;; Defined at:
-   759 ;;		line 4 in file "libs/uart/uart.c"
+   759 ;;		line 4 in file "../lib/uart/uart.c"
    760 ;; Parameters:    Size  Location     Type
    761 ;;		None
    762 ;; Auto vars:     Size  Location     Type
@@ -805,42 +805,42 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    791                           ; Regs used in _UART_init: [wreg]
    792                           
    793                           
-   794                           ;libs/uart/uart.c: 5:     TRISCbits.TRISC6 = 0;
+   794                           ;../lib/uart/uart.c: 5:     TRISCbits.TRISC6 = 0;
    795  0773  1683               	bsf	3,5	;RP0=1, select bank1
    796  0774  1303               	bcf	3,6	;RP1=0, select bank1
    797  0775  1307               	bcf	7,6	;volatile
    798                           
-   799                           ;libs/uart/uart.c: 6:     TRISCbits.TRISC7 = 1;
+   799                           ;../lib/uart/uart.c: 6:     TRISCbits.TRISC7 = 1;
    800  0776  1787               	bsf	7,7	;volatile
    801                           
-   802                           ;libs/uart/uart.c: 7:     TXSTAbits.SYNC = 0;
+   802                           ;../lib/uart/uart.c: 7:     TXSTAbits.SYNC = 0;
    803  0777  1218               	bcf	24,4	;volatile
    804                           
-   805                           ;libs/uart/uart.c: 8:     TXSTAbits.TX9 = 0;
+   805                           ;../lib/uart/uart.c: 8:     TXSTAbits.TX9 = 0;
    806  0778  1318               	bcf	24,6	;volatile
    807                           
-   808                           ;libs/uart/uart.c: 9:     TXSTAbits.BRGH = 1;
+   808                           ;../lib/uart/uart.c: 9:     TXSTAbits.BRGH = 1;
    809  0779  1518               	bsf	24,2	;volatile
    810  077A                     l650:
    811                           
-   812                           ;libs/uart/uart.c: 10:     SPBRG = 129;
+   812                           ;../lib/uart/uart.c: 10:     SPBRG = 129;
    813  077A  3081               	movlw	129
    814  077B  0099               	movwf	25	;volatile
    815  077C                     l652:
    816                           
-   817                           ;libs/uart/uart.c: 11:     RCSTAbits.SPEN = 1;
+   817                           ;../lib/uart/uart.c: 11:     RCSTAbits.SPEN = 1;
    818  077C  1283               	bcf	3,5	;RP0=0, select bank0
    819  077D  1303               	bcf	3,6	;RP1=0, select bank0
    820  077E  1798               	bsf	24,7	;volatile
    821  077F                     l654:
    822                           
-   823                           ;libs/uart/uart.c: 12:     TXSTAbits.TXEN = 1;
+   823                           ;../lib/uart/uart.c: 12:     TXSTAbits.TXEN = 1;
    824  077F  1683               	bsf	3,5	;RP0=1, select bank1
    825  0780  1303               	bcf	3,6	;RP1=0, select bank1
    826  0781  1698               	bsf	24,5	;volatile
    827  0782                     l656:
    828                           
-   829                           ;libs/uart/uart.c: 13:     RCSTAbits.CREN = 1;
+   829                           ;../lib/uart/uart.c: 13:     RCSTAbits.CREN = 1;
    830  0782  1283               	bcf	3,5	;RP0=0, select bank0
    831  0783  1303               	bcf	3,6	;RP1=0, select bank0
    832  0784  1618               	bsf	24,4	;volatile
@@ -983,7 +983,7 @@ DATA                 0      0       0      12        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.36 build 20220127204148 
-Symbol Table                                                                                   Wed Aug 14 00:53:09 2024
+Symbol Table                                                                                   Thu Aug 15 17:00:22 2024
 
                       pc 0002                       l41 0766                       l37 0785  
                      l45 076C                       l54 07A4                       l48 0772  
