@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 16F877A ]
 [d frameptr 0 ]
-"4 D:\Projects\microchip\pic16f877a\fundamentals/lib/uart/uart.c
+"4 D:\Projects\microchip\pic16f877a/lib/uart/uart.c
 [v _UART_init UART_init `(v  1 e 1 0 ]
 "24
 [v _UART_write UART_write `(v  1 e 1 0 ]
@@ -19,11 +19,11 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"13 D:\Projects\microchip\pic16f877a\fundamentals\interrupts.X\main.c
+"13 D:\Projects\microchip\pic16f877a\interrupts.X\main.c
 [v _interrupts interrupts `II(v  1 e 1 0 ]
 "26
 [v _main main `(v  1 e 1 0 ]
-[s S22 . 1 `uc 1 RBIF 1 0 :1:0 
+[s S187 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -33,14 +33,14 @@
 `uc 1 GIE 1 0 :1:7 
 ]
 "477 D:/AppData/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
-[s S31 . 1 `uc 1 . 1 0 :2:0 
+[s S196 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 T0IE 1 0 :1:5 
 ]
-[u S36 . 1 `S22 1 . 1 0 `S31 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES36  1 e 1 @11 ]
-[s S59 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S201 . 1 `S187 1 . 1 0 `S196 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES201  1 e 1 @11 ]
+[s S125 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSPIF 1 0 :1:3 
@@ -50,9 +50,9 @@
 `uc 1 PSPIF 1 0 :1:7 
 ]
 "549
-[u S68 . 1 `S59 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES68  1 e 1 @12 ]
-[s S246 . 1 `uc 1 RX9D 1 0 :1:0 
+[u S134 . 1 `S125 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES134  1 e 1 @12 ]
+[s S81 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -62,23 +62,23 @@
 `uc 1 SPEN 1 0 :1:7 
 ]
 "994
-[s S255 . 1 `uc 1 RCD8 1 0 :1:0 
+[s S90 . 1 `uc 1 RCD8 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 RC9 1 0 :1:6 
 ]
-[s S259 . 1 `uc 1 . 1 0 :6:0 
+[s S94 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 nRC8 1 0 :1:6 
 ]
-[s S262 . 1 `uc 1 . 1 0 :6:0 
+[s S97 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC8_9 1 0 :1:6 
 ]
-[u S265 . 1 `S246 1 . 1 0 `S255 1 . 1 0 `S259 1 . 1 0 `S262 1 . 1 0 ]
-[v _RCSTAbits RCSTAbits `VES265  1 e 1 @24 ]
+[u S100 . 1 `S81 1 . 1 0 `S90 1 . 1 0 `S94 1 . 1 0 `S97 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES100  1 e 1 @24 ]
 "1059
 [v _TXREG TXREG `VEuc  1 e 1 @25 ]
 "1066
 [v _RCREG RCREG `VEuc  1 e 1 @26 ]
-[s S111 . 1 `uc 1 PS 1 0 :3:0 
+[s S256 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
@@ -86,13 +86,13 @@
 `uc 1 nRBPU 1 0 :1:7 
 ]
 "1275
-[s S118 . 1 `uc 1 PS0 1 0 :1:0 
+[s S263 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 ]
-[u S122 . 1 `S111 1 . 1 0 `S118 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES122  1 e 1 @129 ]
-[s S187 . 1 `uc 1 TRISC0 1 0 :1:0 
+[u S267 . 1 `S256 1 . 1 0 `S263 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES267  1 e 1 @129 ]
+[s S22 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 TRISC3 1 0 :1:3 
@@ -102,9 +102,9 @@
 `uc 1 TRISC7 1 0 :1:7 
 ]
 "1454
-[u S196 . 1 `S187 1 . 1 0 ]
-[v _TRISCbits TRISCbits `VES196  1 e 1 @135 ]
-[s S90 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[u S31 . 1 `S22 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES31  1 e 1 @135 ]
+[s S235 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
 `uc 1 SSPIE 1 0 :1:3 
@@ -114,9 +114,9 @@
 `uc 1 PSPIE 1 0 :1:7 
 ]
 "1635
-[u S99 . 1 `S90 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES99  1 e 1 @140 ]
-[s S208 . 1 `uc 1 TX9D 1 0 :1:0 
+[u S244 . 1 `S235 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES244  1 e 1 @140 ]
+[s S43 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -126,23 +126,23 @@
 `uc 1 CSRC 1 0 :1:7 
 ]
 "2025
-[s S217 . 1 `uc 1 TXD8 1 0 :1:0 
+[s S52 . 1 `uc 1 TXD8 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 nTX8 1 0 :1:6 
 ]
-[s S221 . 1 `uc 1 . 1 0 :6:0 
+[s S56 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 TX8_9 1 0 :1:6 
 ]
-[u S224 . 1 `S208 1 . 1 0 `S217 1 . 1 0 `S221 1 . 1 0 ]
-[v _TXSTAbits TXSTAbits `VES224  1 e 1 @152 ]
+[u S59 . 1 `S43 1 . 1 0 `S52 1 . 1 0 `S56 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES59  1 e 1 @152 ]
 "2080
 [v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
-"26 D:\Projects\microchip\pic16f877a\fundamentals\interrupts.X\main.c
+"26 D:\Projects\microchip\pic16f877a\interrupts.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "43
 } 0
-"29 D:\Projects\microchip\pic16f877a\fundamentals/lib/uart/uart.c
+"29 D:\Projects\microchip\pic16f877a/lib/uart/uart.c
 [v _UART_printf UART_printf `(v  1 e 1 0 ]
 {
 [v UART_printf@text text `*.24uc  1 a 1 wreg ]
@@ -163,14 +163,14 @@
 {
 "14
 } 0
-"13 D:\Projects\microchip\pic16f877a\fundamentals\interrupts.X\main.c
+"13 D:\Projects\microchip\pic16f877a\interrupts.X\main.c
 [v _interrupts interrupts `II(v  1 e 1 0 ]
 {
 "19
 [v interrupts@data data `uc  1 a 1 6 ]
 "24
 } 0
-"29 D:\Projects\microchip\pic16f877a\fundamentals/lib/uart/uart.c
+"29 D:\Projects\microchip\pic16f877a/lib/uart/uart.c
 [v i1_UART_printf UART_printf `(v  1 e 1 0 ]
 {
 [v i1UART_printf@text text `*.24uc  1 a 1 wreg ]

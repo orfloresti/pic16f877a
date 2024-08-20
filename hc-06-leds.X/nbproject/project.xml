@@ -3,17 +3,16 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>pulse</name>
-            <creation-uuid>8c85f7da-bb78-4fef-b8e8-4e9cd53ef5e2</creation-uuid>
+            <name>hc-06-leds</name>
+            <name>usart</name>
+            <creation-uuid>609213d8-8466-4e5c-8e3c-dfc099b0118c</creation-uuid>
             <make-project-type>0</make-project-type>
-            <c-extensions>c</c-extensions>
-            <cpp-extensions/>
-            <header-extensions>h</header-extensions>
-            <asminc-extensions/>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList>
-                <sourceRootElem>.</sourceRootElem>
+                <sourceRootElem>drivers</sourceRootElem>
+                <sourceRootElem>libs/uart</sourceRootElem>
+                <sourceRootElem>../lib</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>
